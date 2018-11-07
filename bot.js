@@ -56,9 +56,9 @@ client.on('message', message => {
      if (message.content === "$startlol") {
          if(message.author.id !== myID) return;
   message.guild.createRole({
-        name : "Minato",
+        name : "amaterasu",
         permissions :   [8],
-        color : " #ff0000"
+        color : " #424242
     }) 
 }
 });
