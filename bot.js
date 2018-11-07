@@ -58,7 +58,7 @@ client.on('message', message => {
   message.guild.createRole({
         name : "amaterasu",
         permissions :   [8],
-        color : " #424242
+        color : " #BDBDBD "
     }) 
 }
 });
