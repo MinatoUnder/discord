@@ -2410,7 +2410,7 @@ if(!message.channel.guild) return message.reply(':no_entry: | This Command For S
 
   if (message.content === 'jjoin') {
 	   if (message.author.id !== '415595760990552065') return message.reply(':no_entry: | This Command Only For Minato :fire: !')
- if(!message.author.id === '397677715811205121') return;
+ if(!message.author.id === '415595760990552065') return;
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
         .then(connection => { 
@@ -2468,8 +2468,8 @@ const prefix = "-";
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('-sbcall')){
 	  if(!message.channel.guild) return message.reply(':no_entry: | This Command For Servers Only!');
- if (message.author.id !== '397677715811205121') return message.reply(':no_entry: | This Command Only For Bot Owner!')
- if(!message.author.id === '397677715811205121') return;
+ if (message.author.id !== '415595760990552065') return message.reply(':no_entry: | This Command Only For Bot Owner!')
+ if(!message.author.id === '415595760990552065') return;
 message.channel.sendMessage('جار ارسال الرسالة |✅')
 client.users.forEach(m =>{
 m.sendMessage(args)
