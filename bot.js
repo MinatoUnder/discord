@@ -21,7 +21,7 @@ const stripIndents = require('common-tags').stripIndents;
 const figlet = require('figlet');
 const client = new Discord.Client();
 const prefix = '-'
-const myID = "505346451019399177";
+const myID = "415595760990552065";
 ti={}  
 spee={};
 
@@ -1455,7 +1455,7 @@ client.on("guildMemberAdd", member => {
 client.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', '👉-welcome-👈');
       if (!channel) return;   
-      channel.send("**Welcome To xRGRx :yellow_heart:**")
+      channel.send("**Welcome To Test :yellow_heart:**")
     });
 
 
@@ -1549,13 +1549,13 @@ client.on("message", (message) => {
         if (message.author.id === client.user.id) return;
         let yumz = new Discord.RichEmbed()
                     .setTimestamp()
-                    .setTitle("Direct Message To Dark Bot")
+                    .setTitle("Direct Message To Amaterasu Bot")
                     .addField(`Sent By:`, `<@${message.author.id}> (User ID: message.author.id)`)
                     .setColor("RANDOM")
                     .setThumbnail(message.author.displayAvatarURL)
                     .addField(`Message: `, `\n\n\`\`\`${message.content}\`\`\``)
-                    .setFooter(`DM Dark Bot Messages | DM Logs`)
-                client.users.get("397677715811205121").send(yumz)
+                    .setFooter(`DM Amaterasu Bot Messages | DM Logs`)
+                client.users.get("415595760990552065").send(yumz)
             }
 });
 
