@@ -34,7 +34,7 @@ client.on('ready', () => {
 client.on('ready', function(){    
     var ms = 100000 ;
     var prefix = "-"; 
-    var setGame = [`Amaterasu,✨`,`IsHere`,`By @Minato`];
+    var setGame = [`Amaterasu,🔥`,`Love All 🌹`,`💖.💖`];
     var i = -1;    
     var j = 0;    
     setInterval(function (){    
