@@ -2057,12 +2057,16 @@ message.channel.send('**تم الغاء عمليه مسح العالم بنجا�
 });
 
 
-     client.on("message", message => {
-      if (message.content === "_help") {
-       const embed = new Discord.RichEmbed() 
-           .setColor("#FF00FF")
-           .setFooter('By Minato ')
-           .setDescription(`
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help") {
+    if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**انت لست من الادارة :x:** `ADMINISTRATOR`' );
+
+
+
+
+message.author.sendMessage(`
+**
 __**وصف عن البوت**__
 **
 ─════════════ {✯اوامر البوت✯} ════════════─
@@ -2139,10 +2143,10 @@ __**وصف عن البوت**__
  ❖ _invite رابط اضافة البوت
  ❖ _ping لمعرفه سرعه اتصال البوت
 ─════════════ {✯ By Minato ! ✯} ════════════─
-**
-`);
-}
-})
+**`);
+
+  }
+});
 
 client.on('message',  async  message  =>  {
   let  user  =  message.mentions.users.first();
