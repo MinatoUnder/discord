@@ -2057,11 +2057,12 @@ message.channel.send('**تم الغاء عمليه مسح العالم بنجا�
 });
 
 
-client.on('message' , message => {
-if(message.content === '_help') {
-  var EsTeKnAN = new Discord.RichEmbed()
-  .setColor('RANDOM')
-message.author.send(`
+     client.on("message", message => {
+      if (message.content === "_help") {
+       const embed = new Discord.RichEmbed() 
+           .setColor("#FF00FF")
+           .setFooter('By Minato ')
+           .setDescription(`
 __**وصف عن البوت**__
 **
 ─════════════ {✯اوامر البوت✯} ════════════─
@@ -3456,7 +3457,7 @@ client.on('message', message => {
     if (message.content === "_help") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`© SHYBOY_05 ™.`, 'https://images-ext-2.discordapp.net/external/X9SanEG0s7Dtv3krTgy-kod_fj6JRVJ2AG4JryCiiz0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/375761288518828042/fffa31c797e88cf059dd6db424ff456a.png?width=80&height=80')
+  .setFooter(`© Minato.`, 'https://i.imgur.com/t9fzzo2.jpg')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3:شيك علي في الخاص")
   
